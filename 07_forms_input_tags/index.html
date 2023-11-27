@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms - Lets learn it</title>
+  </head>
+  <body>
+    <h1>Form to apply for TCS Wings1 Examination</h1>
+    <form action="post">
+      <div>
+        <label for="username">Enter your username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username - mandatory field"
+          autofocus
+          required
+        />
+      </div>
+
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <div>
+          <input type="checkbox" name="module_list" id="t1" value="t1" />
+          <label for="t1">T1 Technical Track</label>
+        </div>
+        <div>
+          <input type="checkbox" name="module_list" id="t2" value="t2" />
+          <label for="t2">T2 Technical Track</label>
+        </div>
+        <div>
+          <input type="checkbox" name="module_list" id="t3" value="t3" />
+          <label for="t3">T3 Technical Track</label>
+        </div>
+
+        <div>
+          <label for="comment">Enter your comments</label>
+          <br />
+          <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="fruits">Select your favourite fruits from the range of fruits : </label>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+      </div>
+
+      <div>
+        <p>
+          The "type" attribute specifies the type of input control (e.g., text,
+          password, checkbox).<br />
+          The "name" attribute is used for identifying the control, especially
+          when the data is sent to the server. <br />
+          The "value" attribute sets a default value for the control, which the
+          user can overwrite.
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
