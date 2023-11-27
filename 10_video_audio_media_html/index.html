@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <video src="Milne Hai Mujse aayi.mp4" width="700" muted loop poster="denise.jpg" controls></video> -->
+    <h3>Click on play button to play the audio</h3>
+    <audio src="mera_bhai_tu.mp3" controls></audio>
+
+    <h3>Click on the video button to play the video</h3>
+
+    <!-- iframe is used to embed any website on video like youtube -->
+    <iframe
+      src="https://www.youtube.com/embed?v=nDWvy5pT_rQ&list=PLKWDesYRFIYva0c5Ocf0kKbwRU6HKN2Dx"
+      width="350"
+      height="200"
+      frameborder="0"
+    allowfullscreen></iframe>
+
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+
+    <img src="img.svg" alt="Sample SVG">
+
+    <div>The "preload" attribute can have the following values:</div>
+    <ol>
+      <li>
+        none: This is the default value. It indicates that the browser should
+        not preload the audio file at all. The audio file will only start
+        downloading when the user initiates playback.
+      </li>
+      <li>
+        metadata: This value tells the browser to preload only the metadata of
+        the audio file, such as its duration and basic information about the
+        audio. This can be useful if you want to display the audio duration to
+        the user without fully loading the audio data.
+      </li>
+      <li>
+        auto: This value instructs the browser to preload the entire audio file
+        as much as possible without delaying the loading of other important page
+        content. The browser will try to load the audio file in the background
+        so that it's ready to play when the user decides to start it.
+      </li>
+    </ol>
+  </body>
+</html>
