@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+            margin: 20px;
+            padding: 20px;
+        } */
+
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+
+        /* Child Selector */
+        div >p {
+            color: brown;
+            background-color: blanchedalmond;
+        }
+
+        /* Descendent Selector */
+        div p{
+            color: white;
+            background-color: rgb(83, 112, 161);
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selector */
+        a:visited{
+            color: brown;
+        }
+
+        a:active{
+            background-color: yellow;
+        }
+        a:hover{
+            background-color: violet;
+        }
+        p:first-child{
+            background-color: orange
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="one">
+        <p>I'm First</p>
+        <p>I'm Second</p>
+    </div>
+
+    <div class="red">
+        I am from Div1
+
+        <article>
+            <p>Paragraph inside div</p>
+        </article>
+    </div>
+
+    <div id="green">2nd div will be automatically converted to red</div> <!--
+        to avoid this use class
+    -->
+    <a href="https://www.google.com" target="_blank">Go to Google</a>
+    <a href="https://www.facebook2.com" target="_blank">Go to Facebook</a>
+</body>
+</html>
