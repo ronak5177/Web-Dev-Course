@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Specificity - The last one will override others */
+      .cyellow {
+        color: yellow;
+      }
+
+      #specificity {
+        color: seagreen;
+      }
+      .cpurple {
+        color: purple;
+      }
+
+      .cred {
+        color: red;
+      }
+
+      h1 {
+        color: aqua !important;
+        background-color: brown;
+      }
+
+      [data-x="attr"] {
+        background-color: rgb(255, 208, 127);
+      }
+
+      a.harryclass.rohan-class[href]:hover {
+        color: red;
+    }
+      /* 
+      Add up all these values: 1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41.
+      So, the specificity value of the selector a.harryclass.rohan-class[href]:hover will be 41. */
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Inline CSS has highest priority -->
+      <!-- <h1 style="color: blue;" class="cyellow cred cpurple">CSS Specificity</h1> -->
+
+      <!-- ID Selector -->
+      <!-- <h1 id="specificity" class="cyellow cred cpurple">CSS Specificity</h1> -->
+
+      <!-- <h1 class="cyellow cred cpurple" data-x="attr">CSS Specificity</h1> -->
+
+      <!-- Element Selector -->
+      <h1 class="cyellow cred cpurple">CSS Specificity</h1>
+    </div>
+
+    <div>
+      <h4>
+        Inline Style &gt; ID Selector > Class or Attribute Selector > Element
+        Selector > Universal Selector
+      </h4>
+    </div>
+
+    <ol>
+      <li>
+        <strong>Position and order of appearance: </strong> the order in which
+        your CSS rules appear
+      </li>
+      <li>
+        <strong> Specificity: </strong>
+        an algorithm that determines which CSS selector has the strongest match
+      </li>
+      <li>
+        <strong> Origin: </strong>
+        the order in which CSS appears and where it comes from, whether that is
+        a browser style, CSS from a browser extension, or your authored CSS
+      </li>
+      <li>
+        <strong> Importance: </strong>
+        some CSS rules are weighted more heavily than others, especially with
+        the !important rule type Lets look into all these one by one
+      </li>
+    </ol>
+  </body>
+</html>
