@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html{
+        font-size: 12px;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 1536px; */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        /* font-size: 2rem; */
+        background-color: rgb(204, 204, 110);
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px solid black;
+        /* width: 1536px; */
+        width: 80vw;
+        /* height: 60vh; */
+        min-height: 80vh;
+        margin: 23px auto;
+        font-size: 18px;
+        background-color: rgb(204, 204, 110);
+        box-sizing: border-box;
+      }
+
+      .container > div{
+        /* double of inherit font-size which is 18 so the calculated value would be 36px */
+        /* font-size: 2em;     */
+
+        /* 2x of root font-size(html) */
+        font-size: 2rem;
+
+        /* 50% of parents width         */
+        width: 50%;
+        border: 2px solid black;
+      }
+
+      .container > div > div{
+        width: 50%;
+        border: 2px solid red;
+      }
+
+      .mycont{
+        font-size: 22px;
+        /* width: 100vmin; */
+        width: 80vw;
+        margin: 23px auto;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+        necessitatibus similique architecto placeat esse est quis ipsum velit
+        odio. Non inventore ut aliquid, aperiam officia blanditiis, magni
+        explicabo possimus eaque a unde sapiente nobis?
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae voluptate laborum iusto dolorem, suscipit cum tempora numquam totam ratione nam distinctio tenetur.
+        </div>
+      </div>
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+  </body>
+</html>
