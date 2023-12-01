@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Shadow and Outliners</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        padding: 34px;
+        box-shadow: 10px 10px 9px 5px #888888;
+      }
+      .text-shadow{
+        padding: 10px;
+        text-shadow: 10px 10px 4px #f18484 ;
+        outline: 4px solid black;
+        outline-offset: 5px;
+        border: 5px solid green;
+        border-radius: 10px;  /* outlines follow border-radius*/
+      }
+
+      code{
+        display: block;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">I am a box</div>
+    <h3>Syntax</h3>
+    
+    <code>
+        <strong>box-shadow: </strong>h-offset v-offset blur spread color inset;
+    </code>
+    <code>
+        <strong>text-shadow:</strong> h-offset v-offset blur color;
+    </code>
+    <code>
+        <strong>outline: </strong>width style color;
+    </code>
+
+    <h3>Box Shadows</h3>
+
+    <ol>
+      <li>
+        <strong>h-offset and v-offset:</strong> Determines the shadow's
+        horizontal and vertical position
+      </li>
+      <li>
+        <strong>blur:</strong> The larger the value, the blurrier the shadow.
+      </li>
+      <li><strong>spread:</strong> Expands or shrinks the shadow size.</li>
+      <li><strong>color:</strong> Defines the shadow color.</li>
+      <li><strong>inset:</strong> Makes the shadow inner.</li>
+    </ol>
+
+    <div>
+        <p class="text-shadow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi atque inventore quaerat quidem dolor accusamus excepturi. Delectus sed non aliquid, aperiam quae impedit illo ad vel nulla est minima deleniti, consequuntur tempora amet itaque!
+        </p>
+    </div>
+  </body>
+</html>
