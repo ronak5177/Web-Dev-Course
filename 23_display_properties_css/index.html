@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+                    
+        .box{
+            border: 2px solid blue;
+            /* convert block element into an inline element */
+            /* display: inline;   when we apply margin it won't work for top     */
+
+            display: inline-block; /* useful when we have to apply margin-padding*/
+
+            width: 344px;
+            padding: 45px;
+            margin: 45px;
+        }
+
+        .box1{
+            display: inline-block;  /* space and box both will be removed */
+            /* visibility: hidden;  space will be there only box will be removed */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        also a line box
+    </div>
+    <span>I am good</span>
+    <span>I am boy</span>
+</body>
+</html>
