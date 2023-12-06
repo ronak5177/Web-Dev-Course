@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        :root{
+            /* --bgcolor: aqua;
+            --color: rgb(124, 46, 232); */
+
+            --bgcolor: yellow;
+            --color: blue;
+        }
+    *{
+        margin: 0;
+        padding: 2px;
+    }
+      body {
+        background-color: beige;
+      }
+      .nav{
+        outline: 1px solid black;
+        border-radius: 5px;
+        color: var(--color);
+        background-color: var(--bgcolor);
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        list-style: none;
+        padding: 5px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+  </body>
+</html>
