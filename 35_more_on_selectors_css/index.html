@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* First line as per your device */
+        /* .box::first-line{
+            color: cadetblue;
+        } */
+
+        /* All child of .boxes */
+        .boxes *{
+            color: brown;
+            border: 2px solid black;
+        }
+
+        /* Grouping Secectors */
+        p, a, .box, [data-color="primary"]{
+            padding: 20px;
+        }
+
+        
+        /* .box:nth-child(odd){
+            background-color: yellow;
+        } */
+
+        .box:nth-last-child(2){
+            background-color: yellowgreen;
+        }
+
+
+        /* psuedo element  */
+        .boxes::before{
+            content: "Hello I am good";
+            color: blue;
+        }
+        .boxes::after{
+            content: "this will enter at the end";
+            color: red;
+        }
+
+        ::selection{
+            color: pink;
+            background-color: black;
+        }
+
+        p::first-letter{
+            color: purple;
+            font-size: 23px;
+            background-color: pink;
+        }
+
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus delectus vel eaque nulla consequatur adipisci nemo sit rerum eveniet. Temporibus nesciunt adipisci dolorem.
+        </div>
+        <div class="box">Hey</div>
+        <div class="box">Hey</div>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur consequatur dolor velit!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur consequatur dolor velit!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur consequatur dolor velit!</p>
+
+        <input type="text" placeholder="enter your text here">
+    </div>
+</body>
+</html>
