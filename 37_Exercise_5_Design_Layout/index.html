@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .nav {
+      background-color: rgb(253, 208, 204);
+      position: sticky;
+      top: 0px;
+      padding: 15px 40px;
+    }
+    ul li {
+      text-decoration: none;
+      display: inline;
+      padding: 0px 30px;
+    }
+    .container {
+      height: 85vh;
+      background-color: lemonchiffon;
+      display: flex;
+    }
+    .section {
+      height: 250px;
+      width: 350px;
+      border: 2px solid black;
+      margin: 10px 30px;
+      overflow: auto;
+    }
+
+    .box{
+        height: 20vh;
+        width: auto;
+        border: 2px solid brown;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 30px 0px;
+        text-align: center;
+        background-color: wheat;
+    }
+    .image{
+        z-index: 10;
+        float: right;
+        /* position: fixed; */
+        opacity: .9;
+        margin: 20px;
+    }
+    
+    footer {
+      margin-top: 20px;
+      height: 10vh;
+      width: auto;
+      background-color: skyblue;
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="section">I am a section</div>
+      <div class="section">
+        I am a section Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Nobis natus facere, perspiciatis quae mollitia sint debitis sunt
+        perferendis molestias repellendus ullam deleniti enim, pariatur nam
+        officiis commodi impedit error illo ipsum similique et hic. Aperiam
+        rerum sunt magnam culpa unde accusantium similique! Delectus aliquid
+        magni ratione fugit ipsa doloremque eius amet corporis quisquam. Maxime,
+        odio ex. Repellat officiis pariatur eligendi excepturi non officia autem
+        odio inventore assumenda cupiditate harum, sed natus molestias quam
+        numquam distinctio ducimus sint, rerum at eos voluptatibus! Beatae
+        molestias eius molestiae, nostrum quisquam corporis reiciendis, illum
+       rror eos distinctio ducimus, obcaecati ad modi ipsum. Quis saepe
+        lat fugit enim totam nisi incidunt iste, cum reprehenderit tempore
+        perferendis? Ipsa ut repudiandae laudantium reiciendis, numquam natus!
+        Iure error nesciunt delectus officiis aperiam libero labore consequatur
+        laudantium quod eveniet! Aspernatur nam magnam commodi nihil porro, at
+        architecto animi nobis cupiditate neque vitae a inventore qui doloremque
+        laboriosam numquam accusamus. Quam sunt illo praesentium reiciendis
+        deleniti laudantium quod ipsa asperiores! Doloremque laudantium possimus
+        quo harum! Doloremque excepturi voluptas blanditiis
+      </div>
+    </div>
+
+    <div class="box">
+        Welcome to My learning platform
+    </div>
+
+    <div class="image">
+        <img src="logo.PNG" alt="logo" height="100px">
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
