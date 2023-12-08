@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        position: sticky;
+        top: 0;
+      }
+      nav {
+        background-color: pink;
+        height: 55px;
+      }
+      main {
+        background-color: black;
+        color: white;
+        padding: 34px;
+      }
+
+      .container {
+        background-color: aquamarine;
+        margin: 12px 34px;
+        padding: 55px;
+        text-align: center;
+        /* height: 233px; */
+      }
+
+      .box1 {
+        background-color: palevioletred;
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0px 29px;
+      }
+
+      .box2 {
+        background-color: saddlebrown;
+        height: 70vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0px 29px;
+      }
+
+      .text-box {
+        padding: 32px 60px;
+        border: 2px solid white;
+        border-radius: 25px;
+        margin: 34px 34vw;
+        font-size: 1.2em;
+      }
+
+      .orangebox {
+        /* height: 120px;
+        width: 120px; */
+        /* background-color: orange; */
+        border-radius: 65px;
+        position: fixed;
+        bottom: 12px;
+        right: 34px;
+      }
+      img{
+        height: 120px;
+        width: 120px;
+        border-radius: 60px;
+      }
+      footer {
+        height: 100px;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </div>
+      <div class="text-box">
+        <p>Welcome to My Learning Platform</p>
+      </div>
+
+      <div class="orangebox">
+        <img src="logo.PNG" alt="logo.png">
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
