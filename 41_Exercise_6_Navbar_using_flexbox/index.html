@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar using flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            background-color: sienna;
+            height: 200px;
+            
+        }
+
+        .logo{
+            align-self: self-start;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            
+        }
+        img{
+            height: 50px;
+            width: 50px;
+            align-self: self-start;
+            /* border-radius: 60px; */
+        }
+        ul li{
+            padding: 12px 24px;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        main{
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><img src="logo.png" alt="" srcset=""></li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Product</a></li>
+                <li><a href="/">Resource</a></li>
+                <li><a href="/">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        main
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
