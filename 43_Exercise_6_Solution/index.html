@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar using Flexbox</title>
+    <style>
+
+      .logo img{
+        width: 164px;
+        
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: "Segoe UI";
+
+    }
+    
+    .right ul {
+        display: flex;
+        gap: 34px;
+    }
+    
+    .right ul li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .right ul li span{
+        padding: 0px 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+            <img src="dark_logo.png" alt="dark_logo.png">
+        </div>
+        <div class="right">
+          <ul>
+            <li><span>Products </span><svg fill="none" height="15" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 5.2929 5.2929c.3333.3333.5.5.7071.5s.3738-.1667.7071-.5l5.2929-5.2929" stroke="#141b34" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></li>
+            <li><span>Pricing </span><svg fill="none" height="15" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 5.2929 5.2929c.3333.3333.5.5.7071.5s.3738-.1667.7071-.5l5.2929-5.2929" stroke="#141b34" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></li>
+            <li><span>Resources </span><svg fill="none" height="15" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 5.2929 5.2929c.3333.3333.5.5.7071.5s.3738-.1667.7071-.5l5.2929-5.2929" stroke="#141b34" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></li>
+            <li><span>About us </span><svg fill="none" height="15" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 5.2929 5.2929c.3333.3333.5.5.7071.5s.3738-.1667.7071-.5l5.2929-5.2929" stroke="#141b34" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></li>
+
+            <li>
+                <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="home.png">
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
