@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations CSS</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 30vw;
+            background-color: bisque;
+        }
+        
+        .box{
+            width: 45px;
+            height: 45px;
+            /* border-radius: 60px; */
+            /* background-color: red; */
+            /* animation-name: myAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+            animation: myAnimation 2s ease-in 1s 2 forwards,
+                       Animation2 2s ease-out 1s 2 forwards;
+        }
+
+        @keyframes myAnimation {
+            from{
+                background-color: yellow;
+            } to{
+                background-color: red;
+                 transform: translateY(73vh);
+            }
+        }
+
+        @keyframes Animation2 {
+            0%{
+               transform: rotate(45deg); 
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
