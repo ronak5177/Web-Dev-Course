@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id, Class Selectors</title>
+    <style>
+      .box {
+        height: 34px;
+        width: 34px;
+        margin: 14px;
+        padding: 34px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box" id="cyanbox">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box" name="box5">box 5</div>
+    </div>
+
+    <script>
+      // By ClassName
+      // let boxes = document.getElementsByClassName("box")
+      // console.log(boxes)
+
+      // boxes[0].style.backgroundColor = "yellow"
+      // boxes[1].style.backgroundColor = "pink"
+      // boxes[2].style.backgroundColor = "lightblue"
+      // boxes[3].style.backgroundColor = "maroon"
+      // boxes[4].style.backgroundColor = "azure"
+
+      // By Id
+      // document.getElementById("cyanbox").style.backgroundColor = "cyan"
+
+      // By Query Selector
+      document.querySelector(".box").style.backgroundColor = "violet";
+      console.log(document.querySelectorAll(".box"));
+      // document.querySelectorAll(".box")[2].style.backgroundColor = "red"
+
+      document.querySelectorAll(".box").forEach((e) => {
+        e.style.backgroundColor = "lightgreen";
+      });
+
+      document.getElementsByTagName("div")[1].style.backgroundColor =
+        "greenyellow";
+      console.log(document.getElementsByTagName("div"));
+
+      // document.getElementsByName("box5")[0].style.backgroundColor = "brown"
+
+      // By TagName
+      const e = document.getElementsByTagName("div");
+      // HTMLCollection(6) [div.container, div.box, div.box, div#cyanbox.box, div.box, div.box, cyanbox: div#cyanbox.box, box5: div.box]0: div.container1: div.box2: div.box3: div#cyanbox.box4: div.box5: div.boxbox5: div.boxcyanbox: div#cyanbox.boxlength: 6[[Prototype]]: HTMLCollection
+
+      // matches
+      console.log(e[3].matches("#cyanbox"));
+
+      e[3].closest(".container");
+      e[3].closest("html");
+
+      // contains
+      /*
+        document.querySelector(".container").contains(document.querySelector("body"))
+        false
+        document.querySelector("body").contains(document.querySelector(".container"))
+        true
+        */
+    </script>
+  </body>
+</html>
