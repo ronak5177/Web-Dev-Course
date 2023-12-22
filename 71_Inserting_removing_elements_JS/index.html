@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting Removing Elements</title>
+    <style>
+
+        .container{
+            background-color: rgb(206, 233, 242);
+            padding: 10px;
+        }
+        .box{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    container (outer)
+    <div class="container">
+        container (inner)
+        <div class="box">I am a box 1</div>
+        <div class="box">I am a box 2</div>
+    </div>
+    <div class="container">
+        <div class="box">I am a box 3</div>
+        <div class="box">I am a box 4</div>
+    </div>
+
+    <script>
+        // div.setAttribute("class", "created")
+
+        /*
+        let div = document.createElement("div")
+        div.innerHTML = "new element created by <b>Ronak</b>"
+        document.querySelector(".box").prepend(div)   // inside box
+        document.querySelector(".box").before(div) // inside container outside box
+
+        document.querySelector(".box").after(div) // next to the box inside container
+        document.querySelector(".box").append(div) // inside first box
+        */
+
+        let cont = document.querySelector(".container")
+        // cont.insertAdjacentHTML("afterbegin", "<strong>Hello, how are you ?</strong>")
+        // cont.insertAdjacentHTML("afterend", "<strong>Hello, how are you ?</strong>")
+        // cont.insertAdjacentHTML("beforebegin", "<strong>Hello, how are you ?</strong>")
+        // cont.insertAdjacentHTML("beforeend", "<strong>Hello, how are you ?</strong>")
+
+        const tempDiv = document.createElement("div");
+        tempDiv.style.backgroundColor = "maroon"
+        tempDiv.style.color = "white"
+        tempDiv.innerText = "This is new div"
+
+        cont.insertAdjacentElement("beforeend", tempDiv)
+
+
+        /*
+            document.querySelector(".container").classList
+            DOMTokenList ['container', value: 'container']
+            document.querySelector(".container").className
+            'container'
+            document.querySelector(".container").classList.add("newClass")
+            document.querySelector(".container").classList.remove("newClass") // remove newClass
+            document.querySelector(".container").classList.toggle("newClass") 
+        */
+
+
+    </script>
+</body>
+</html>
