@@ -5,32 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Boxes</title>
     <style>
+          .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
         .box{
-            height: 15px;
-            width: 15px;
-            margin: 23px;
-            padding: 23px;
-            border: 2px solid black;
-            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            padding: 10px;
+            border: 2px solid black; 
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div>
-        <div id="box"></div> -->
-        <div id="first" class="box">Box1</div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+
+        <!-- Using Id  -->
+        <!-- <div id="first" class="box">Box1</div>
         <div id="second" class="box">Box2</div>
         <div id="third" class="box">Box3</div>
         <div id="fourth" class="box">Box4</div>
-        <div id="fifth" class="box">Box5</div>
+        <div id="fifth" class="box">Box5</div> -->
     </div>
 
     <script>
 
+        //  Using class 
+        document.getElementsByClassName("box")
+
+        /*
+        // Using Id 
         document.getElementById("first").style.color = "white"
         document.getElementById("first").style.backgroundColor = "brown"
 
@@ -44,9 +58,8 @@
         document.getElementById("fourth").style.backgroundColor = "green"
         
         document.getElementById("fifth").style.color = "orange"
-        document.getElementById("fifth").style.backgroundColor = "gray"
-
-
+        document.getElementById("fifth").style.backgroundColor = "gray"    
+        */
 
         /*
         // let e = document.getElementsByidName("box")[1].style.backgroundColor = "blue"
@@ -60,6 +73,16 @@
         document.querySelectorAll(".box").forEach(element => element.style.backgroundColor = "pink");
         
         */
+
+        bgcolors = ["lightblue", "lightgreen", "pink", "beige", "maroon"]
+        colors = ["brown", "darkblue", "orange", "purple", "white"]
+
+        let array = document.getElementsByClassName("box")
+        for (let i = 0; i < array.length; i++) {
+            array[i].style.color = colors[i]
+            array[i].style.backgroundColor = bgcolors[i]
+            
+        }
 
     </script>
 </body>
