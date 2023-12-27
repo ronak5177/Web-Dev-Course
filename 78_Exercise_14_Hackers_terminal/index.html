@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You can't see me</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        color: rgb(19, 132, 19);
+      }
+      .box > ul > li {
+        list-style: none;
+        font-size: 14px;
+      }
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      @keyframes blinker {
+         50%{
+            opacity: 0;
+         }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create a hacking simulator which has green background and it shows these messages with random delay of 1 to 7 seconds 
+    
+    Initializing Hacking...
+    Reading your Files...
+    Password files Detected...
+    Sending all passwords and personal files to server...
+    Cleaning up...
+
+    The three dots must blink so that it looks like a real terminal
+    -->
+    <div class="container">
+      <div class="box">
+        <ul class="ul_list">
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
