@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <div>Hello</div>
+    <button onclick="">Add Data</button>
+    <div class="myNote">
+    </div>
+<body>
+    <script>
+        const setAuthToken = (token)=>{
+            localStorage.setItem("token", token, JSON.stringify(540))
+        }
+        const token = localStorage.getItem("token")
+        if (token){
+            document.querySelector(".myNote").innerHTML = token;
+        }
+        
+        const x = document.getElementsByTagName("button")[0]
+        x.addEventListener("click", ()=>{
+            let token = prompt("Enter token value")
+            setAuthToken(token)
+        })
+        document.querySelector(".myNote").innerHTML = token;
+        
+    </script>
+</body>
+</html>
