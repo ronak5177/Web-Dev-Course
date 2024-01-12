@@ -1,0 +1,72 @@
+<!-- The Window Scroller:
+You are developing a single-page application with a smooth scrolling effect. Implement a function named smoothScrollToTop that smoothly scrolls the window to the top when called. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll To Top</title>
+    <style>
+        /* html{
+            scroll-behavior: smooth;
+        } */
+        body {
+            height: 200vh; /* Creating a tall page to enable scrolling */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: aqua
+        }
+
+        .go-top-btn{
+            position: fixed;
+            cursor: pointer;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgb(158, 37, 37);
+            color: white;
+            border-radius: 8px;
+          
+        }
+        img{
+            border-radius: 8px;            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Content to create a tall page for scrolling -->
+    <div id="content">
+        <p>This is a tall content. Scroll down to see more.</p>
+        <img src="https://picsum.photos/720/400" alt="image.png">
+    </div>
+
+    <!-- Button to trigger smooth scroll to top -->
+    <button class="go-top-btn">Scroll To Top</button>
+    <script>
+        const goTopButton = document.querySelector(".go-top-btn");
+        
+        // function checkHeight(){
+        //     if (window.screenY > 200){
+        //         goTopButton.style.display = "flex"
+        //     } else {
+        //         goTopButton.style.display = "none"
+        //     }
+            
+        // }
+        // window.addEventListener("scroll", checkHeight)
+
+        goTopButton.addEventListener("click", ()=>{
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        })
+        
+    </script>
+   
+</body>
+</html>
+

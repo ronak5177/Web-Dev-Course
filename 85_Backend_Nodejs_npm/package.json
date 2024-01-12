@@ -1,0 +1,18 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "description": "demo app to initialize node js server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "app"
+  ],
+  "author": "Ronak",
+  "license": "ISC",
+  "dependencies": {
+    "countries-and-timezones": "^3.6.0"
+  }
+}
