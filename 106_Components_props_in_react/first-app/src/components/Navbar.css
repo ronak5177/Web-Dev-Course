@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: plum;
+  padding: 15px;
+}
+
+nav,
+ul {
+  display: flex;
+}
+
+nav > ul {
+  gap: 15px;
+}
+
+li {
+  list-style: none;
+}
