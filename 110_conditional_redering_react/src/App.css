@@ -1,0 +1,20 @@
+.container{
+  margin: 200px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+.card{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  padding: 5px 2px;
+}
+
+.todolist{
+  border: 2px solid purple;
+  margin: 10px;
+}

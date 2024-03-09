@@ -1,7 +1,7 @@
 import {useEffect} from 'react'
 
 const Navbar = ({color}) => {
-      // Case 1: Run on every render
+  // Case 1: Run on every render
   useEffect(()=>{
     alert("Hello User, I'll run on every render")
   })
