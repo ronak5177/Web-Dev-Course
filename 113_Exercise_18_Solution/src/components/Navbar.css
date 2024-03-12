@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: navy;
+    color: white;
+
+}
+
+nav > ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 20px;
+}
+
+li:hover{
+    text-decoration: underline;
+}
